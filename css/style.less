@@ -1,0 +1,613 @@
+/*============    ШРИФТЫ    ===========*/
+@font-face {
+    font-family: 'pfdintextcondprobold';
+    src: url('fonts/pfdintextcondprobold.eot');
+    src: url('fonts/pfdintextcondprobold.eot') format('embedded-opentype'),
+         url('fonts/pfdintextcondprobold.woff2') format('woff2'),
+         url('fonts/pfdintextcondprobold.woff') format('woff'),
+         url('fonts/pfdintextcondprobold.ttf') format('truetype'),
+         url('fonts/pfdintextcondprobold.svg#pfdintextcondprobold') format('svg');
+}
+@font-face {
+    font-family: 'pfdintextcondprolight';
+    src: url('fonts/pfdintextcondprolight.eot');
+    src: url('fonts/pfdintextcondprolight.eot') format('embedded-opentype'),
+         url('fonts/pfdintextcondprolight.woff2') format('woff2'),
+         url('fonts/pfdintextcondprolight.woff') format('woff'),
+         url('fonts/pfdintextcondprolight.ttf') format('truetype'),
+         url('fonts/pfdintextcondprolight.svg#pfdintextcondprolight') format('svg');
+}
+@font-face {
+    font-family: 'pfdintextcondpromedium';
+    src: url('fonts/pfdintextcondpromedium.eot');
+    src: url('fonts/pfdintextcondpromedium.eot') format('embedded-opentype'),
+         url('fonts/pfdintextcondpromedium.woff2') format('woff2'),
+         url('fonts/pfdintextcondpromedium.woff') format('woff'),
+         url('fonts/pfdintextcondpromedium.ttf') format('truetype'),
+         url('fonts/pfdintextcondpromedium.svg#pfdintextcondpromedium') format('svg');
+}
+
+.bold {
+	 font-family: "pfdintextcondprobold";
+}
+.med{
+		font-family: 'pfdintextcondpromedium';
+}
+.light{
+	font-family: "pfdintextcondprolight";
+}
+/*============    Базоывые настройки    ===========*/
+a:hover,
+a:focus,
+a:invalid,
+a:active{
+	text-decoration: none;
+}
+.section_header h2{
+  margin-top: 50px;
+  text-transform: uppercase;
+  color: #666666;
+  .bold;
+}
+button:focus{
+  outline: none;
+}
+/*============    Шапка    ===============*/
+.navbar-inverse{
+  .test{
+    .navbar-collapse{
+      border-radius: 5px;
+      border: solid black 2px;
+      width: 40%;
+      background-color: white;
+      .navbar-nav a{
+        padding: 3px 5px;
+    		.light;
+    		color: black;
+    		   -moz-transition: all 0.1s 0.02s ease;
+           -o-transition: all 0.1s 0.02s ease;
+            -webkit-transition: all 0.1s 0.02s ease;
+    		&:hover{
+    			text-decoration: none;
+    			background-color: #00BFFF;
+    			color: white;
+    		}
+        &:focus{
+          text-decoration: none;
+    			background-color: #00BFFF;
+    			color: white;
+        }
+    	}
+  }
+    .navbar-toggle {
+      &:hover,
+      &:focus{
+        background-color: #00BFFF;
+
+      }
+
+      span.icon-bar{
+      background-color: black;
+    }
+    }
+
+    }
+  }
+
+
+
+/*=================    Навигация   ================*/
+
+.navbar-inverse{
+
+.navbar-toggle {
+  &:hover,
+  &:focus{
+    background-color: #00BFFF;
+
+  }
+
+  span.icon-bar{
+  background-color: black;
+}
+}
+  border-bottom: solid black 0.5px ;
+  background-color: white;
+  .navbar-brand{
+    color: black;
+    font-size: 25px;
+    &:hover,
+    &:focus{
+      color: #00BFFF;
+    }
+  }
+	background-color: white;
+	ul.navbar-nav a{
+		.light;
+		display: inline-block;
+		text-transform: uppercase;
+		padding: 20px 10px;
+		color: black;
+		   -moz-transition: all 0.1s 0.02s ease;
+       -o-transition: all 0.1s 0.02s ease;
+        -webkit-transition: all 0.1s 0.02s ease;
+		&:hover{
+			text-decoration: none;
+			background-color: #00BFFF;
+			color: white;
+		}
+    &:focus{
+      text-decoration: none;
+			background-color: #00BFFF;
+			color: white;
+    }
+	}
+	ul.list-inline{
+		margin-bottom: 0;
+	}
+   top: 0px; /*высота шапки в пикселях*/
+   position: fixed;
+   z-index: 100;
+   width: 100%;
+}
+
+/*============    Главный экран    ===========*/
+section#main{
+	//background: url(../img/main.jpg) no-repeat center center;
+	background-size: cover;
+	.main_header{
+		h1{
+			margin-top: 200px;
+			margin-bottom: 90px;
+			.bold;
+			color: #FAEBD7;
+			text-transform: uppercase;
+			span{
+				background: rgba(0, 170, 238, 0.3);
+				padding: 5px;
+
+			}
+		}
+	}
+	h3{
+    span{
+      background: rgba(0, 170, 238, 0.1);
+    }
+		text-transform: uppercase;
+		.bold;
+		color: black;
+
+	}
+	.main_buttons{
+		margin-bottom: 100px;
+		margin-top: 7px;
+		button#get_measurer{
+			border: none;
+			background-color: #00BFFF;
+			padding: 17px 35px;
+			color: white;
+			font-size: 20px;
+			.bold;
+			text-transform: uppercase;
+			&:hover {
+        color: #00BFFF;
+        border: 2px solid #00BFFF;
+				background-color: rgba(255, 255, 255, 0.8);
+			}
+		}
+		button#get_types{
+			border: none;
+			background-color: transparent;
+			padding: 17px 35px;
+			color: #00BFFF;
+			.bold;
+			text-transform: uppercase;
+			font-size: 20px;
+			border: 2px solid #00BFFF;
+			margin-left: 20px;
+			&:hover{
+				background-color: rgba(255, 255, 255, 0.8);
+			}
+		}
+	}
+}
+/*================    Виды жалюзи    ================*/
+section#types{
+margin-bottom: 50px;
+  color: #666666;
+  margin-top: 50px;
+  .section_header{
+    margin-bottom: 50px;
+  }
+  h4{
+    margin-top: 25px;
+    text-transform: uppercase;
+    .med;
+  }
+  button.more_btn{
+    border: none;
+    border: 2px solid #00BFFF;
+    padding: 10px 27px;
+    background-color: transparent;
+    text-transform: uppercase;
+    .bold;
+    -moz-transition: all 0.1s 0.02s ease;
+    -o-transition: all 0.1s 0.02s ease;
+     -webkit-transition: all 0.1s 0.02s ease;
+    &:hover{
+      color: #00BFFF;
+      border: 2px solid #00BFFF;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+  }
+  button.offer_btn{
+    border: none;
+    background-color: #00BFFF;
+    border: 2px solid #00BFFF;
+    padding: 10px 27px;
+    text-transform: uppercase;
+    color: #fff;
+    .bold;
+    -moz-transition: all 0.1s 0.02s ease;
+    -o-transition: all 0.1s 0.02s ease;
+     -webkit-transition: all 0.1s 0.02s ease;
+    &:hover{
+      background-color: rgba(255, 255, 255, 0.8);
+      color: #00BFFF;
+  }
+}
+.card{
+  -moz-transition: all 0.1s 0.02s ease;
+  -o-transition: all 0.1s 0.02s ease;
+   -webkit-transition: all 0.1s 0.02s ease;
+  padding: 5px;
+  border: 2px solid transparent;
+  &:hover{
+    background: rgba(0, 170, 238, 0.1);
+    border: 2px solid #00BFFF;
+  }
+}
+}
+/*=====================    Бесплатная консультация    ================*/
+section#help{
+  padding-top: 65px;
+  padding-bottom: 50px;
+  h3{
+    span{
+      background: rgba(0, 170, 238, 0.3);
+    }
+    color: black;
+    text-transform: uppercase;
+    .bold;
+  }
+  p{
+    span{
+      background: rgba(0, 170, 238, 0.1);
+    }
+    color: black;
+    .bold;
+    font-size: 18px;
+  }
+  img{
+    margin-top: 25px;
+  }
+  button#free_consult{
+    .bold;
+    text-transform: uppercase;
+    border: none;
+    background-color: #00BFFF;
+    color: white;
+    border: 2px solid #00BFFF;
+    padding: 15px 35px;
+    &:hover {
+      color: #00BFFF;
+      border: 2px solid #00BFFF;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+  }
+}
+/*==================    Акция  ======================*/
+section#offer{
+  padding-bottom: 100px;
+  margin-top: 100px;
+  padding-top: 7px;
+
+  h4{
+    margin-top: 70px;
+    font-size: 25px;
+    span{
+      background: rgba(0, 170, 238, 0.3);
+    text-transform: uppercase;
+    color: white;
+    .bold;
+
+  }
+  }
+  h3{
+    span{
+      background: rgba(0, 170, 238, 0.3);
+    text-transform: uppercase;
+    color: white;
+    .bold;
+
+  }
+  }
+  p{
+    .bold;
+    color: white;
+    font-size: 22px;
+    span{
+      background: rgba(0, 170, 238, 0.3);
+    }
+  }
+  input[name="name"]{
+
+    font-size: 20px;
+    padding: 25px;
+    padding-left: 30px;
+    border-radius: 0;
+    border: solid 1px #cccccc;
+    color: black;
+    .light;
+    &:hover,
+    &:focus {
+      background-color: rgba(255, 255, 255, 0.8);
+       border: solid 1px #00BFFF;
+    }
+  }
+  input[name="phone"]{
+
+    font-size: 20px;
+    padding: 25px;
+    padding-left: 30px;
+    border-radius: 0;
+    border: solid 1px #cccccc;
+    .light;
+    color: black;
+    &:hover,
+    &:focus {
+      background-color: rgba(255, 255, 255, 0.8);
+       border: solid 1px #00BFFF;
+    }
+  }
+  button[type="submit"]{
+    background-color: #00BFFF;
+    color: white;
+    border: 2px solid #00BFFF;
+    padding: 14px 25px;
+    &:hover{
+      color: #00BFFF;
+      border: 2px solid #00BFFF;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+  }
+}
+/*=================    Отзывы    =================*/
+section#feedback{
+  h2{
+    color: #666666;
+  }
+  padding-bottom: 50px;
+  .section_header{
+    margin-bottom: 50px;
+  }
+  .item {
+    background-color: #f8f8f8;
+    padding: 20px;
+    h5{
+      margin-top: 25px;
+      .med;
+      color: #666666;
+      font-size: 20px;
+    }
+    a{
+      .med;
+      font-size: 18px;
+    }
+    p{
+      margin-top: 30px;
+    }
+  }
+  .carousel-indicators{
+    bottom: -50px;
+  }
+  .carousel-indicators .active{
+    background-color: #00BFFF;
+}
+.carousel-indicators li{
+  border: solid 1px #00BFFF;
+}
+}
+/*===================    Футер подвал    ==================*/
+footer{
+  margin-top: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #696969;
+  color: #fff;
+  .socseti{
+    a{
+      background-color: gray;
+    }
+  }
+  h2{
+    margin-left: -15px;
+    .bold;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  address{
+    margin-top: 10px;
+p#address{
+  .light;
+  text-transform: uppercase;
+}
+
+  p#kazan{
+    font-size: 20px;
+    .light;
+    margin-top: 0;
+  }
+}
+p#phone_footer{
+  p#address{
+    margin-bottom: 0;
+    text-transform: uppercase;
+    .light;
+  }
+}
+p#number{
+  font-size: 20px;
+  .light;
+  margin-top: 0;
+}
+button#get_answer{
+  text-transform: uppercase;
+  background-color: transparent;
+  padding: 7px 30px;
+  color: white;
+  border: 2px solid white;
+  .bold;
+  &:hover{
+    background-color: #fff;
+    color: #666666;
+  }
+}
+.details_row{
+  margin-top: 30px;
+}
+.details{
+  h5{
+    .med;
+    font-size: 20px;
+  }
+  p{
+    text-transform: uppercase;
+    .light;
+  }
+}
+.policy{
+  text-align: center;
+  a{
+    color: white;
+    border-bottom: 1px dashed white;
+  }
+}
+.islamov{
+  text-align: right;
+  h4{
+    .bold;
+    text-transform: uppercase;
+  }
+  a{
+    color: #00BFFF;
+    .bold;
+    font-size: 18px;
+  }
+}
+}
+/*============    Всплывающие окна    ===========*/
+.big_modal{
+  margin-top: 10%;
+  width: 60%;
+}
+.modal-dialog{
+  margin-top: 10%;
+}
+.header_modal{
+  h4{
+    text-transform: uppercase;
+    color: #666666;
+    .bold;
+    text-align: center;
+  }
+}
+  .modal-header{
+    margin-top: -50px;
+    border-bottom: none;
+    .close{
+      text-shadow: none;
+      color: #fff;
+      opacity: 0.9;
+      margin-right: -30px;
+    }
+  }
+.modal-content{
+  border-radius: 0;
+  input[name="name"]{
+    margin-top: 15px;
+    font-size: 20px;
+    padding: 25px;
+    padding-left: 30px;
+    border-radius: 0;
+    border: solid 1px #cccccc;
+    .light;
+    opacity: 0.8;
+    &:hover,
+    &:focus{
+      color: #00BFFF;
+      border: 2px solid #00BFFF;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+  }
+  input[name="phone"]{
+    margin-top: 15px;
+    font-size: 20px;
+    padding: 25px;
+    padding-left: 30px;
+    border-radius: 0;
+    border: solid 1px #cccccc;
+    .light;
+    opacity: 0.8;
+    &:hover,
+    &:focus{
+      color: #00BFFF;
+      border: 2px solid #00BFFF;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+  }
+  textarea{
+    width: 100%;
+    margin-top: 15px;
+    font-size: 20px;
+    padding: 25px;
+    padding-left: 30px;
+    border-radius: 0;
+    border: solid 1px #cccccc;
+    .light;
+    opacity: 0.8;
+    &:hover,
+    &:focus {
+      opacity: 0.4;
+  }
+}
+  button[type="submit"]{
+    margin-top: 15px;
+    background-color: #00BFFF;
+    color: white;
+    border: 2px solid #00BFFF;
+    padding: 14px 35px;
+    width: 100%;
+    &:hover,
+    &:focus{
+      color: #00BFFF;
+      border: 2px solid #00BFFF;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+  }
+  p{
+    .light;
+    font-size: 18px;
+  }
+}
+.header_modal_info{
+  h4{
+    margin-left: 20px;
+    text-transform: uppercase;
+    color: #666666;
+    .bold;
+
+  }
+
+}
+@import "media.less";
